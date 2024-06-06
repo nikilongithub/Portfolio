@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Nikhil Kumar</title>
+        <link rel="stylesheet" href="style.css">
+        <script src="https://kit.fontawesome.com/7497333e84.js" crossorigin="anonymous"></script>
+    </head>
+    <body>
+        <!-- Add a container element for the profile image -->
+      <div class="profile-image-container">
+     <!-- Add the image element -->
+     <img src="Images/laila.jpg">
+     </div>
+     <div class="container">
+        <nav>
+            <!-- <img src= "C:\Users\nkkum\OneDrive\Desktop\DOCS\Coding Programes\Portfolio\Images\logo.jpg" class="logo"> -->
+            <h1>NIKHIL</h1>
+            <ul id="side-menu">
+                <li><a href="#">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#services">Services</a></li>
+                <li><a href="#hobbies">Hobbies</a></li>
+                <li><a href="#contact">Contact</a></li>
+                <i class="fa-regular fa-circle-xmark" onclick="closemenu()"></i>
+            </ul>
+            <i class="fa-solid fa-bars" onclick="openmenu()"></i>
+        </nav>
+        <div class="header-text">
+            <p>Front End Developer</p>
+            <h1>Hi there, I'm <span> Nikhil.</span>
+            <p>Your minds are about to be blown up. This is my first ever try to make a responsive website i.e, a portfolio.
+                <br><br>This website responses according to the device the user is using.<br><br>
+                    You can send me your responses or queries via the "Contact" section in the navigation menu.<br><br>
+                    Also don't forget to follow me on the social-media handles I have provided below.<br><br>
+                    <span>Now have fun exploring this website. Till then... Sayonara!!</span></p></h1>
+        </div>
+     </div>
+     
+     <!-- ------about------->
+     <div id="about">
+        <div class="container-1">
+           <div class="row">
+              <div class="col-1">
+                <img src="Images/pic.jpg" alt="pic"></div>
+                <div class="col-2">
+                    <h1 class="sub-title">About me:</h1> 
+                    <!--  let's just make this code readable from now on-->
+                    <p>I'm a dynamic individual driven by a relentless passion for technology and a fervent love for bikes.<br>
+                    I love traveling and spending time with my family and my friends. I have explored many places on bike 
+                    and I am wiling to keep exploring the world and see it with the eyes of my bike.<br><br>
+                    My motive to create this portfolio to showcase my abilities and enthusiasm towards Web development.<br>
+                    This is going to be a fully resposnsive web portfolio which I believe is a pretty nice job as my first project. <br><br>After creating this portfolio I am in love with my self!</p>
+                    <div class="tab-titles">
+                        <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
+                        <p class="tab-links"onclick="opentab('education')">Education</p>
+                        <p class="tab-links"onclick="opentab('experience')">Experience</p>
+                    </div>
+                    <div class="tab-contents active-tab" id="skills">
+                        <ul>
+                            <li><span>Python</span><br>Python Development</li><br>
+                            <li><span>Problem Solving</span><br>Logic Building</li><br>
+                            <li><span>Web Development</span><br>Website Development<br> Front-End Development</li>
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id="education">
+                        <ul>
+                            <li>I would rather not share that just now. <br><br>
+                                Plus, I don't believe it's very relevant to know.
+
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id="experience">
+                        <ul>
+                            <li>None at the moment... <br><br>
+                                I'm just woking on my self and projects to get some experience in the future.
+
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+           </div>
+        </div>
+     </div>
+     <!-- ------services-------->
+     <div id="services">
+        <div class="container-2">
+            <h1 class="sub-title">My Services:</h1>
+            <div class="services-list">
+                <div>
+                    <i class="fa-solid fa-globe"></i>
+                    <h2>Web Development</h2>
+                    <p>I am growing in the field of Web Development on a day to day basis.
+                         See one of my samples by clicking: </p>
+                    <a href="https://multiple-stepsform.netlify.app/3">Learn More</a>
+                </div>
+                <div>
+                    <i class="fa-brands fa-python"></i>
+                    <h2>Python Development</h2>
+                    <p>I am growing in the field of Python Development on a day to day basis.
+                         I love spending my time on Pycharm and other platforms where I can put my creativity in use. </p>
+                    <a href="https://github.com/nikilongithub/Python-Practice.git">Learn More</a>
+                </div>
+                <div>
+                    <i class="fa-brands fa-js"></i>
+                    <h2>JavaScript</h2>
+                    <p>I am growing in the field of JavaScript Development on a day to day basis.
+                         I love spending my time on VS code and other platforms where I can put my creativity in use. </p>
+                    <a href="#">Learn More</a>
+                </div>
+
+            </div>
+        </div>
+     </div>
+     <!-----------hobbies------------>
+     <div id="hobbies">
+        <div class="container-3">
+            <h1 class="sub-title">My Hobbies</h1>
+            <div class="hobby-list">
+                <div class="bikes">
+                    <img src="Images/Bike.jpg"> 
+                    <div class="layer">
+                        <h3>Ridding</h3>
+                        <p>I just live for this shit! I am born to be a rider till my very last breathe. <br>
+                            Once a RIDER,<br>
+                            Always a RIDER</p>
+                            <a href="https://www.motogp.com/">
+                                <i class="fa-solid fa-link"></i></a>
+                    </div>
+                </div>
+                <div class="anime">
+                    <img src="Images/a.jpg"> 
+                    <div class="layer">
+                        <h3>Anime</h3>
+                        <p>
+                            I love spending my free time watching a lot of anime.<br>
+                            It helps me stay fresh all the time.</p>
+                            <a href="https://www.crunchyroll.com/">
+                                <i class="fa-solid fa-link"></i></a>
+                    </div>
+                </div>
+                <div class="gamming">
+                    <img src="Images/gaming.jpg"> 
+                    <div class="layer">
+                        <h3>Gaming</h3>
+                        <p>I usually play a lot of games and E-sports whenever I need something new and exciting in my life<br>
+                            Playing games never disappoint me. <br>There is always something new you can find out.</p>
+                         <a href="https://store.steampowered.com/"><i class="fa-solid fa-link"></i></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+     </div>
+     <!-- ---------contact----------->
+     <div id="contact">
+        <div class="container">
+            <div class="row">
+                <div class="contact-left">
+                    <h1 class="sub-title">Contact Me</h1>
+                    <p><i class="fa-solid fa-paper-plane"></i>nkkumar6580@gmail.com</p>
+                    <p><i class="fa-solid fa-phone"></i>+91 8595451458</p>
+                    <div class="social-icons">
+                        <a href="https://www.instagram.com/this_is_nikhil007/">
+                            <i class="fa-brands fa-square-instagram"></i></a>
+                        <a href="https://in.linkedin.com/in/nikhil-kumar-a2b2a524b"><i class="fa-brands fa-linkedin"></i></a>
+                        <a href="https://github.com/nikilongithub"><i class="fa-brands fa-square-github"></i></a>
+                        <a href="https://www.snapchat.com/add/nikhil_k0603?share_id=d6zeZ7w3TAo&locale=en-GB">
+                            <i class="fa-brands fa-square-snapchat"></i>
+                        </a> 
+                        
+                    </div>
+                    <a href="Images/Nikhil_Resume.pdf" download class="btn btn2">Download CV</a>
+                </div>
+                <div class="contact-right">
+                    <form name="submit-to-google-sheet">
+                        <input type="text" name="Name" placeholder="Your Name" required>
+                        <input type="email" name="Email" placeholder="Your email" required>
+                        <textarea name="Message" rows="6" placeholder="Your Message"></textarea>
+                        <button type="submit" class="btn btn2">Submit</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+        <div class="copy-right">
+            <p>Copyright © Nikhil. <i class="fa-solid fa-heart"></i> Made with great Hardwork and Efforts.</p>
+        </div>
+     </div>
+     <script>
+        var tablinks= document.getElementsByClassName("tab-links")
+        var tabcontents= document.getElementsByClassName("tab-contents")
+        function opentab(tabname){
+            for(tablink of tablinks){
+                tablink.classList.remove("active-link");
+            }
+            for(tabcontent of tabcontents){
+                tabcontent.classList.remove("active-tab");
+            }
+            event.currentTarget.classList.add("active-link");
+            document.getElementById(tabname).classList.add("active-tab");
+        }
+     </script>
+
+     <!-- ------script for the sidemenu bar--------- -->
+     <script>
+        var sidemenu = document.getElementById("side-menu");
+        function openmenu(){
+            sidemenu.style.right= "0";
+        }
+        function closemenu(){
+            sidemenu.style.right= "-200px";
+        }
+     </script>
+     <script>
+        const scriptURL = 'https://script.google.com/macros/s/AKfycbxeHOPAyY8IGF4HEGP1v82FE-z8lXSj39laEzQ7QxpcE2oWwwcwTCuhj_cEIdRpOv1y/exec'
+        const form = document.forms['submit-to-google-sheet']
+      
+        form.addEventListener('submit', e => {
+          e.preventDefault()
+          fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+            .then(response => console.log('Success!', response))
+            .catch(error => console.error('Error!', error.message))
+        })
+      </script>
+    </body>
+</html>

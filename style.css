@@ -1,0 +1,569 @@
+*{
+    margin: 0%;
+    padding: 0%;
+    font-family: 'Poppins', sans-serif;
+    box-sizing: border-box;
+}
+html{
+  scroll-behavior: smooth;
+}
+body{
+    background: #080808;
+    color: #fff;
+}
+/* Add the following styles to your CSS file */
+
+/* Position the profile image container at the top right corner */
+.profile-image-container {
+    position: absolute;
+    top: 0;
+    right: 0;
+    margin-top: 150px;
+    margin-right: 5%;
+  }
+  
+  /* Set the image to be circular  Meri-buggi*/
+  .profile-image-container img {
+    border-radius: 35%;
+    width: 450px; /* Adjust the width to fit your image */
+    height: 500px; /* Adjust the height to fit your image */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+  }
+  .container{
+    padding: 10px 3%;
+  }
+  .container h1{
+    color:rgb(26, 219, 230);
+    font-size: 50px;
+    /* font-style: Arial; */
+    margin-left: 10px;
+  }
+/* .logo{
+    top: 0;
+    left: 0;
+    height: 150px;
+    width: 300px;
+} */
+nav{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+nav ul li{
+  display: inline-block;
+  list-style: none;
+  margin: 10px 20px;
+}
+nav ul li a{
+  color: #fff;
+  text-decoration: none;
+  font-size: 18px;
+  font-style: italic;
+  position: relative;
+}
+nav ul li a::after{
+  content: '';
+  width: 0;
+  height: 3px;
+  background:red;
+  position: absolute;
+  left: 0;
+  bottom: -6px;   
+  transition: 0.5s;   
+}
+nav ul li a:hover::after{
+  width: 100%;
+}
+.header-text{
+  /* margin: 5%; */
+  font-size: 30px;
+  margin-left: 5px;
+  margin-top: 20px;
+}
+.header-text h1 p{
+  padding-right: 50%;
+  font-size: 20px;
+  margin-top: 30px;
+  font-weight: 500;
+  font-style: normal;
+  font-size: 16px;
+  
+}
+.header-text h1 p span{
+  color: white;
+  /* text-decoration: underline; */
+  position: relative;
+  font-size: 30px;
+  margin-left: 30px;
+  font-weight: bolder;
+  align-content: center;
+  margin-top: 20%;
+}
+.header-text h1{
+  font-size: 40px;
+  font-style: italic;
+  color: whitesmoke;
+  margin: 24px;
+  margin-left: 0;
+}
+.header-text h1 span{
+  /* color: #ff004f; */
+  color: orange;
+}
+/* -----about----- */
+#about{
+  padding: 150px 0 10px 0;
+  font-size: 20px;
+}
+.container-1{
+  display: flex;
+}
+.row{
+  display: flex;
+  justify-content: space-between;
+  /* flex-wrap: wrap; */
+}
+.col-1{
+  flex-basis: content;
+  /* padding: 30px; */
+}
+.col-1 img{
+  height: 300px;
+  width: 300px;
+  border-radius: 15%;
+  margin-left: 10%;
+}
+.col-2{
+  flex-basis: 1;
+  align-items: center;
+  padding: 0 60px;
+}
+.col-2 h1{
+  color:rgb(26, 219, 230);
+  font-weight: 700;
+  /* text-decoration: underline; */
+  /* margin-left: 25%;
+  margin-bottom: 400px; */
+}
+/* .col-2 p{
+  padding: 0 250px;
+} */
+.tab-titles{
+  display: flex;
+  margin: 20px 0 40px;
+}
+/* Everything is so good so far 
+Now let's apply CSS to the skills and other stuff*/
+.tab-links{
+  margin-right: 50px;
+  font-size: 18px;
+  font-weight: 500;
+  cursor: pointer;
+  position: relative;
+}
+.tab-links::after{
+  content: '';
+  width: 0;
+  height: 3px;
+  background: red;
+  position: absolute;
+  left: 0;
+  bottom: -8px;
+  transition: 0.5s;
+}
+.tab-links.active-link::after{
+  width: 50%;
+}
+.tab-contents ul li{
+  list-style: none;
+  /* margin: 10px 0; */
+}
+.tab-contents ul li span{
+  color:orange
+}
+.tab-contents{
+  display: none;
+}
+.tab-contents.active-tab{
+  display: block;
+}
+#education{
+  color: rgb(220, 62, 62);
+  font-weight: 5000;
+  font-size: large;
+}
+#experience{
+  color: rgb(220, 62, 62);
+  font-weight: 5000;
+  font-size: large;
+}
+/* -------services------- */
+#services{
+  padding: 35px 30px;
+}
+.services-list{
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+  grid-gap: 50px;
+  margin-top: 2%;
+}
+
+/* color choice */
+
+.container-2 h1{
+  font-size: 40px;
+  color:rgb(26, 219, 230)
+
+}
+.services-list div{
+  background: #262626;  
+  padding: 40px;
+  font-size: 15px;
+  font-weight: 300;
+  border-radius: 10%;
+  color: aquamarine; 
+  transition: background 0.5s, transform 0.5s;
+  /* color for services description */
+}
+.services-list div i{
+  font-size: 50px;
+  margin-bottom: 30px;
+  margin-left: 35%;
+}
+.services-list h2{
+  font-size: 30px;
+  /* font-weight: 500; */
+  margin-bottom: 15px;
+  text-decoration: underline;
+  color: greenyellow;
+}
+.services-list a{
+  text-decoration: none;
+  color: white;
+  margin-bottom: 10px;
+  font-size: 10px;
+  display: inline-block;
+}
+.services-list div:hover{
+  background: black;
+  transform: translate(-10px);
+
+}
+/* --------hobbies-----------*/
+
+#hobbies{
+  padding: 50px 0;
+}
+.container-3 h1{
+  font-size: 40px;
+  color:rgb(26, 219, 230);
+}
+.hobby-list{
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+  grid-gap: 50px;
+  margin-top: 50px;
+}
+.bikes{
+  border-radius: 10px;
+  position: relative;
+  overflow: hidden;
+  transition: transform 0.5s;
+}
+.anime{
+  border-radius: 10px;
+  position: relative;
+  overflow: hidden;
+  transition: transform 0.5s;
+}
+.gamming{
+  border-radius: 10px;
+  position: relative;
+  overflow: hidden;
+  transition: transform 1s;
+}
+.bikes img{
+  border-radius: 15%;
+  /* position: relative; */
+  /* overflow: hidden; */
+  width: 380px;
+  height: 300px;
+  display: block;
+}
+.gamming img{
+  border-radius: 15%;
+  /* position: relative; */
+  /* overflow: hidden; */
+  width: 380px;
+  height: 300px;
+  display: block;
+}
+.anime img{
+  border-radius: 15%;
+  /* position: relative; */
+  /* overflow: hidden; */
+  width: 380px;
+  height: 300px;
+  display: block;
+}
+.layer{
+  width: 100%;
+  height: 15%;
+  border-radius: 15%;
+  position: absolute;
+  left: 0;
+  bottom: 0;  
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  padding: 10px 40px;
+  text-align: center;
+  font-size: 18px;
+  background: linear-gradient(rgba(0,0,0,0.6),#ff004f);
+  transition: height 0.5s;
+}
+.layer h3{
+  font-weight: bolder;
+  margin-bottom: 20px;
+  font-size: larger;
+}
+.layer a{
+  margin-top: 20px;
+  color: #ff004f;
+  text-decoration: none;
+  font-size: 18px;
+  line-height: 60px;
+  background: white;
+  height: 60px;
+  width: 60px;
+  border-radius: 50%;
+}
+.bikes:hover img{
+  transform: scale(1.1);
+}
+.anime:hover img{
+  transform: scale(1.1);
+}
+.gamming:hover img{
+  transform: scale(1.1);
+}
+.bikes:hover .layer{
+  height: 100%;
+}
+.anime:hover .layer{
+  height: 100%;
+}
+.gamming:hover .layer{
+  height: 100%;
+}
+
+/* --------------contact------------ */
+#contact{
+  padding-top: 6%;
+}
+.contact-left{
+  flex-basis: 35%;
+}
+.contact-right{
+  flex-basis: 60%;
+}
+.contact-left p{
+  margin-top: 25px;
+  font-size: 20px;
+}
+.contact-left p i{
+  color: #ff004f;
+  font-size: 20px;
+  margin-right: 15px;
+}
+.social-icons{
+  margin-top: 30px;
+}
+.social-icons a{
+  text-decoration: none;
+  margin-right: 15px;
+  font-size: 35px;
+  margin-top: 10px;
+  color: #ababab;
+  display: inline-block;
+  transition: transform 0.5s;
+}
+.social-icons a:hover{
+  /* color: rgb(232, 163, 35); */
+  color: #ff004f;
+  transform: translateY(-5px);
+}
+.social-icons a{
+  text-decoration: none;
+  margin-right: 15px;
+  font-size: 35px;
+  margin-top: 10px;
+  color: #ababab;
+  display: inline-block;
+  transition: transform 0.5s;
+}
+.social-icons a:hover{
+  /* color: rgb(232, 163, 35); */
+  color: #ff004f;
+  transform: translateY(-5px);
+}
+.social-icons a{
+  text-decoration: none;
+  margin-right: 15px;
+  font-size: 35px;
+  margin-top: 10px;
+  color: #ababab;
+  display: inline-block;
+  transition: transform 0.5s;
+}
+.social-icons a:hover{
+  /* color: rgb(232, 163, 35); */
+  color: #ff004f;
+  transform: translateY(-5px);
+}
+.social-icons a{
+  text-decoration: none;
+  margin-right: 15px;
+  font-size: 35px;
+  margin-top: 10px;
+  color: #ababab;
+  display: inline-block;
+  transition: transform 0.5s;
+}
+.social-icons a:hover{
+  /* color: rgb(232, 163, 35); */
+  color: #ff004f;
+  transform: translateY(-5px);
+}
+.btn{
+  display: block;
+  width: fit-content;
+  border: 1px solid #ff004f;
+  border-radius: 6px;
+  text-decoration: none;
+  color: #fff;
+  margin: 50px auto;  
+  padding: 20px 50px;
+  transition: background 0.5s;
+}
+.btn:hover{
+  background: #ff004f;
+}
+.btn.btn2{
+  display: inline-block;
+  background: #ff004f;
+}
+.contact-right form{
+  width: 100%;
+}
+form input, textarea{
+  width: 100%;
+  border: 0;
+  outline: none;
+  background: #262626;
+  padding: 15px;
+  margin: 15px 0;
+  color: #fff;
+  font-size: 18px;
+  border-radius: 6px;
+}
+form .btn2{
+  padding: 14px 60px;
+  font-size: 18px;
+  margin-top: 20px;
+  cursor: pointer;
+}
+.copy-right{
+  width: 100%;
+  text-align: center;
+  padding: 25px 0;
+  background: #262626;
+  font-weight: 300;
+  margin-top: 20px;
+}
+.copy-right i{
+  color: #ff004f;
+}
+/* --------css for small screen---------- */
+nav .fa-regular{
+  display: none;
+}
+nav .fa-solid{
+  display: none;
+}
+@media only screen and (max-width: 600px){
+  #header{
+    background-image: url(Images/laila.jpg);
+  }
+  .header-text{
+    margin-top: 10px;
+    font-size: 16px;
+  }
+  .header-text h1{
+    font-size: 30px;
+  }
+  nav .fa-regular{
+    display: block;
+    font-size: 25px;
+  }
+  nav .fa-solid{
+    display: block;
+    font-size: 25px;
+  }
+  .profile-image-container img {
+    border-radius: 35%;
+    width: 150px; /* Adjust the width to fit your image */
+    height: 250px; /* Adjust the height to fit your image */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+  }
+  nav ul{
+    background: #ff004f;
+    position: fixed;
+    top: 0;
+    right: -200px;
+    width: 200px;
+    height: 100vh;
+    padding-top: 50px;
+    z-index: 2;
+    transition: right 0.5s;
+  }
+  nav ul li{
+    display: block;
+    margin: 25px;
+  }
+  nav ul .fa-regular{
+    position: absolute;
+    top: 25px;
+    left: 25px;
+    cursor: pointer;
+  }
+  .sub-title{
+    font-size: 40px;
+  }
+  .row{
+    display: block;
+    justify-content: space-between;
+    flex-wrap: wrap;
+  }
+  .col-1 img{
+    height: 300px;
+    width: 300px;
+    border-radius: 15%;
+    margin-left: 10%;    padding: 10px 0;
+  }
+  .col-1, .col-2{
+    flex-basis: 100%;
+  }
+  .col-1{
+    margin-bottom: 30pxs;
+  }
+  .tab-links{
+    font-size: 16px;
+    margin-right: 20px;
+  }
+  .copy-right{
+    font-size: 14px;
+  }
+}
